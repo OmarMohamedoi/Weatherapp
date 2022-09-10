@@ -20,9 +20,9 @@ function performAction(e){
         const finalData=await noders.json()
         console.log(finalData)
     })
-    .then(
-        updateUI()
-    )
+    .then( ()=>{
+        updateUI(); }
+    );
 }
 //Get
 const getWeatherData = async (baseURL,zipKey,apiKey)=>{
