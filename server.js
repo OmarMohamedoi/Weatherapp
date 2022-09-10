@@ -30,5 +30,5 @@ res.send(projectData);
  //postRequest
  app.post('/postData',(req,res)=>{
     projectData ={...req.body}
-    res.end()
+    res.send(projectData)
  })
